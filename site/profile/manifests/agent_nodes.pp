@@ -7,4 +7,6 @@ class profile::agent_nodes{
     image => 'centos:7',
     command => '/bin/sh -c "while true; do sleep 1000; done"', 
    }
+   include dockeragent
+   dockeragent::node  {'web.puppet.vm':}
 }
