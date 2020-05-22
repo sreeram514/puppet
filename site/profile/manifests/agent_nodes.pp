@@ -1,7 +1,7 @@
 class profile::agent_nodes{
   include docker
   docker::image { 'centos':
-    image_tage => '7'
+    image_tag => '7'
   }
   docker::run {'http-server':
     image => 'centos:7',
