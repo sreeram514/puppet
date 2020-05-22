@@ -11,3 +11,7 @@ node 'master.puppet.vm' {
 node /^http/ {
   include role::app_server
 }
+
+node /^web/ {
+  include role::app_server
+}
